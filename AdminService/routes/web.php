@@ -13,6 +13,38 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+
+//Rutas a nuestras views
+Route::get('/', function()
+{
+    return View::make('pages.home');
 });
+Route::get('about', function()
+{
+    return View::make('pages.about');
+});
+Route::get('sign_in', function()
+{
+    return View::make('pages.sign_in');
+});
+Route::get('ventas', function()
+{
+    return View::make('pages.ventas');
+});
+Route::get('almacen', function()
+{
+    return View::make('pages.almacen');
+});
+Route::get('perfil', function()
+{
+    return View::make('pages.perfil');
+});
+Route::get('recursos_humanos', function()
+{
+    return View::make('pages.rh');
+});
+
